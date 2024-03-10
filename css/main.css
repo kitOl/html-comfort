@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  border: none;
 }
 
 h1,
@@ -17,14 +18,18 @@ body {
   margin: 0;
   background-color: #f4f4f4;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   color: #000;
 }
 
+img {
+  display: block;
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1201px;
   padding: 60px 15px 30px;
   margin: 0 auto;
 }
@@ -47,6 +52,27 @@ body {
   background-color: #7aed9e;
 }
 
+.cards-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 30px;
+}
+
+a.card-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  /* color: #000; */
+  transition: all 0.15s ease-in;
+}
+
+a.card-link:hover {
+  /* filter: brightness(1.1); */
+  opacity: 0.8;
+}
+
 .card {
   position: relative;
   width: 270px;
@@ -66,7 +92,7 @@ body {
 .card__badge {
   padding: 3px 10px;
   border-radius: 4px;
-  line-height: 16px;
+  /* line-height: 14px; */
 }
 
 .card__badge--class {
@@ -85,7 +111,7 @@ body {
 }
 
 .card__content {
-  padding: 15px 15px 20px;
+  padding: 16px 15px 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -117,4 +143,30 @@ body {
 
 .card__address {
   color: #777777;
+}
+
+.btn-more {
+  width: 100%;
+  height: 80px;
+
+  background-color: #e5e5e5;
+  border-radius: 4px;
+
+  font-size: 18px;
+  color: #4290c9;
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: all 0.15s ease-in;
+}
+
+.btn-more:hover {
+  background-color: #d7d4d4;
+}
+
+.btn-more img {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: bottom;
 }
