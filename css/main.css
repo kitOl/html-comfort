@@ -210,12 +210,6 @@ a.card-link:hover {
   background-position: center;
 }
 
-.widget__body {
-}
-
-.location {
-}
-
 .location__row {
   display: flex;
   border: 1px solid #d6d6d6;
@@ -276,7 +270,8 @@ a.card-link:hover {
 }
 
 .radio__real,
-.checkbox__real {
+.checkbox__real,
+.toggle__real {
   width: 1px;
   height: 1px;
   opacity: 0;
@@ -293,9 +288,7 @@ a.card-link:hover {
   transform: translate(-50%, -50%);
 
   background: #3c3c3c;
-  /* background-color: #ffe074; */
 
-  /* background: red; */
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -319,7 +312,8 @@ a.card-link:hover {
 }
 
 .radio__title,
-.checkbox__title {
+.checkbox__title,
+.toggle__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -338,9 +332,6 @@ a.card-link:hover {
 
 .checkbox + .checkbox {
   margin-top: 15px;
-}
-
-.checkbox__real {
 }
 
 .checkbox__fake {
@@ -375,7 +366,7 @@ a.card-link:hover {
   color: #000;
 }
 
-.link-show-more {
+.widget__hidden-show {
   margin-top: 15px;
   display: inline-block;
   background: transparent;
@@ -386,4 +377,58 @@ a.card-link:hover {
   line-height: 1.19;
 
   color: #4290c9;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.widget__hidden-show:hover {
+  color: #056cb5;
+  text-decoration: underline;
+}
+
+.widget__hidden {
+  margin-top: 15px;
+  display: none;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.toggle__fake {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  width: 37px;
+  height: 20px;
+  border: 1px solid #777777;
+  border-radius: 10px;
+
+  background-color: #c4c4c4;
+
+  vertical-align: bottom;
+}
+
+.toggle__fake::before {
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #3c3c3c;
+  border-radius: 50%;
+
+  transition: all 0.2s ease-in;
+}
+
+.toggle__real:checked + .toggle__fake {
+  background-color: #ffe074;
+}
+
+.toggle__real:checked + .toggle__fake::before {
+  left: 17px;
 }
