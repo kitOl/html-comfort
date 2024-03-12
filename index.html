@@ -202,193 +202,207 @@
           </button>
         </main>
         <aside class="sidebar">
-          <div class="widget">
-            <div class="widget__title">Близость к метро</div>
-            <div class="widget__body">
-              <div class="location">
-                <div class="location__row">
+          <form>
+            <div class="widget">
+              <div class="widget__title">Близость к метро</div>
+              <div class="widget__body">
+                <div class="location">
+                  <div class="location__row">
+                    <input
+                      class="location__checkbox"
+                      type="checkbox"
+                      id="location-01"
+                      checked
+                    />
+                    <label for="location-01" class="location__btn">
+                      &lt; 10
+                    </label>
+
+                    <input
+                      class="location__checkbox"
+                      type="checkbox"
+                      id="location-02"
+                      checked
+                    />
+                    <label for="location-02" class="location__btn">10-20</label>
+
+                    <input
+                      class="location__checkbox"
+                      type="checkbox"
+                      id="location-03"
+                    />
+                    <label for="location-03" class="location__btn">20-30</label>
+
+                    <input
+                      class="location__checkbox"
+                      type="checkbox"
+                      id="location-04"
+                    />
+                    <label for="location-04" class="location__btn">30+</label>
+                  </div>
+                  <div class="location__row">
+                    <input
+                      class="location__checkbox"
+                      type="checkbox"
+                      id="location-05"
+                    />
+                    <label for="location-05" class="location__btn">Любая</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="widget">
+              <div class="widget__title">Срок сдачи</div>
+              <div class="widget__body">
+                <label class="radio">
                   <input
-                    class="location__checkbox"
-                    type="checkbox"
-                    id="location-01"
                     checked
+                    type="radio"
+                    class="radio__real"
+                    name="deadline"
                   />
-                  <label for="location-01" class="location__btn">
-                    &lt; 10
+                  <span class="radio__fake"></span>
+                  <span class="radio__title">Любой</span>
+                </label>
+
+                <label class="radio">
+                  <input type="radio" class="radio__real" name="deadline" />
+                  <span class="radio__fake"></span>
+                  <span class="radio__title">Сдан</span>
+                </label>
+
+                <label class="radio">
+                  <input type="radio" class="radio__real" name="deadline" />
+                  <span class="radio__fake"></span>
+                  <span class="radio__title">В этом году</span>
+                </label>
+
+                <label class="radio">
+                  <input type="radio" class="radio__real" name="deadline" />
+                  <span class="radio__fake"></span>
+                  <span class="radio__title">В следующем год</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="widget">
+              <div class="widget__title">Дополнительные опции</div>
+              <div class="widget__body">
+                <label class="checkbox">
+                  <input
+                    checked
+                    type="checkbox"
+                    class="checkbox__real"
+                    name="option-01"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <span class="checkbox__title">Двор без машин</span>
+                </label>
+
+                <label class="checkbox">
+                  <input
+                    type="checkbox"
+                    class="checkbox__real"
+                    name="option-02"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <span class="checkbox__title">Высокие потолки</span>
+                </label>
+
+                <label class="checkbox">
+                  <input
+                    type="checkbox"
+                    class="checkbox__real"
+                    name="option-03"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <span class="checkbox__title">Панорамные окна</span>
+                </label>
+
+                <label class="checkbox">
+                  <input
+                    type="checkbox"
+                    class="checkbox__real"
+                    name="option-04"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <span class="checkbox__title">Есть кладовые</span>
+                </label>
+
+                <label class="checkbox">
+                  <input
+                    type="checkbox"
+                    class="checkbox__real"
+                    name="option-05"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <span class="checkbox__title">Малоэтажный</span>
+                </label>
+
+                <div class="widget__hidden">
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      class="checkbox__real"
+                      name="option-06"
+                    />
+                    <span class="checkbox__fake"></span>
+                    <span class="checkbox__title">Доп. опция 1</span>
                   </label>
 
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      class="checkbox__real"
+                      name="option-07"
+                    />
+                    <span class="checkbox__fake"></span>
+                    <span class="checkbox__title">Доп. опция 2</span>
+                  </label>
+
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      class="checkbox__real"
+                      name="option-08"
+                    />
+                    <span class="checkbox__fake"></span>
+                    <span class="checkbox__title">Доп. опция 3</span>
+                  </label>
+                </div>
+
+                <button class="widget__hidden-show">Показать ещё</button>
+              </div>
+            </div>
+
+            <div class="widget">
+              <div class="widget__body">
+                <label class="toggle">
                   <input
-                    class="location__checkbox"
-                    type="checkbox"
-                    id="location-02"
                     checked
-                  />
-                  <label for="location-02" class="location__btn">10-20</label>
-
-                  <input
-                    class="location__checkbox"
                     type="checkbox"
-                    id="location-03"
+                    class="toggle__real"
+                    name="comission"
                   />
-                  <label for="location-03" class="location__btn">20-30</label>
-
-                  <input
-                    class="location__checkbox"
-                    type="checkbox"
-                    id="location-04"
-                  />
-                  <label for="location-04" class="location__btn">30+</label>
-                </div>
-                <div class="location__row">
-                  <input
-                    class="location__checkbox"
-                    type="checkbox"
-                    id="location-05"
-                  />
-                  <label for="location-05" class="location__btn">Любая</label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="widget">
-            <div class="widget__title">Срок сдачи</div>
-            <div class="widget__body">
-              <label class="radio">
-                <input
-                  checked
-                  type="radio"
-                  class="radio__real"
-                  name="deadline"
-                />
-                <span class="radio__fake"></span>
-                <span class="radio__title">Любой</span>
-              </label>
-
-              <label class="radio">
-                <input type="radio" class="radio__real" name="deadline" />
-                <span class="radio__fake"></span>
-                <span class="radio__title">Сдан</span>
-              </label>
-
-              <label class="radio">
-                <input type="radio" class="radio__real" name="deadline" />
-                <span class="radio__fake"></span>
-                <span class="radio__title">В этом году</span>
-              </label>
-
-              <label class="radio">
-                <input type="radio" class="radio__real" name="deadline" />
-                <span class="radio__fake"></span>
-                <span class="radio__title">В следующем год</span>
-              </label>
-            </div>
-          </div>
-
-          <div class="widget">
-            <div class="widget__title">Дополнительные опции</div>
-            <div class="widget__body">
-              <label class="checkbox">
-                <input
-                  checked
-                  type="checkbox"
-                  class="checkbox__real"
-                  name="option-01"
-                />
-                <span class="checkbox__fake"></span>
-                <span class="checkbox__title">Двор без машин</span>
-              </label>
-
-              <label class="checkbox">
-                <input
-                  type="checkbox"
-                  class="checkbox__real"
-                  name="option-02"
-                />
-                <span class="checkbox__fake"></span>
-                <span class="checkbox__title">Высокие потолки</span>
-              </label>
-
-              <label class="checkbox">
-                <input
-                  type="checkbox"
-                  class="checkbox__real"
-                  name="option-03"
-                />
-                <span class="checkbox__fake"></span>
-                <span class="checkbox__title">Панорамные окна</span>
-              </label>
-
-              <label class="checkbox">
-                <input
-                  type="checkbox"
-                  class="checkbox__real"
-                  name="option-04"
-                />
-                <span class="checkbox__fake"></span>
-                <span class="checkbox__title">Есть кладовые</span>
-              </label>
-
-              <label class="checkbox">
-                <input
-                  type="checkbox"
-                  class="checkbox__real"
-                  name="option-05"
-                />
-                <span class="checkbox__fake"></span>
-                <span class="checkbox__title">Малоэтажный</span>
-              </label>
-
-              <div class="widget__hidden">
-                <label class="checkbox">
-                  <input
-                    type="checkbox"
-                    class="checkbox__real"
-                    name="option-06"
-                  />
-                  <span class="checkbox__fake"></span>
-                  <span class="checkbox__title">Доп. опция 1</span>
-                </label>
-
-                <label class="checkbox">
-                  <input
-                    type="checkbox"
-                    class="checkbox__real"
-                    name="option-07"
-                  />
-                  <span class="checkbox__fake"></span>
-                  <span class="checkbox__title">Доп. опция 2</span>
-                </label>
-
-                <label class="checkbox">
-                  <input
-                    type="checkbox"
-                    class="checkbox__real"
-                    name="option-08"
-                  />
-                  <span class="checkbox__fake"></span>
-                  <span class="checkbox__title">Доп. опция 3</span>
+                  <span class="toggle__fake"></span>
+                  <span class="toggle__title">Услуги 0%</span>
                 </label>
               </div>
-
-              <button class="widget__hidden-show">Показать ещё</button>
             </div>
-          </div>
 
-          <div class="widget">
-            <div class="widget__body">
-              <label class="toggle">
-                <input
-                  checked
-                  type="checkbox"
-                  class="toggle__real"
-                  name="comission"
-                />
-                <span class="toggle__fake"></span>
-                <span class="toggle__title">Услуги 0%</span>
-              </label>
+            <div class="widget">
+              <div class="widget__body">
+                <button class="form-btn form-btn--submit">
+                  Применить фильтры
+                </button>
+                <button class="form-btn">
+                  <img src="./img/icons/x.svg" alt="Сбросить фильтр" />
+                  Сбросить фильтры
+                </button>
+              </div>
             </div>
-          </div>
+          </form>
         </aside>
       </div>
     </div>

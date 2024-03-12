@@ -432,3 +432,50 @@ a.card-link:hover {
 .toggle__real:checked + .toggle__fake::before {
   left: 17px;
 }
+
+.form-btn {
+  /* display: inline-block; */
+  width: 270px;
+  height: 50px;
+  background-color: transparent;
+  /* padding: 13px 0 13px; */
+
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+
+  text-align: center;
+  color: #3c3c3c;
+  font-family: inherit;
+  font-size: 16px;
+  /* line-height: 1.18; */
+  line-height: 50px;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.form-btn:hover {
+  background-color: rgb(237, 237, 237);
+}
+
+.form-btn + .form-btn {
+  margin-top: 10px;
+}
+
+.form-btn img {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.form-btn--submit {
+  color: #000;
+  background-color: #ffcf26;
+  border: none;
+}
+
+.form-btn--submit:hover {
+  background-color: #ffe173;
+}
