@@ -38,7 +38,7 @@ img {
 }
 
 .container {
-  max-width: 1201px;
+  max-width: 1202px;
   padding: 60px 15px 30px;
   margin: 0 auto;
 }
@@ -150,6 +150,10 @@ a.card-link:hover {
 }
 
 .btn-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
   height: 80px;
 
@@ -170,15 +174,17 @@ a.card-link:hover {
 }
 
 .btn-more img {
-  display: inline-block;
-  margin-left: 10px;
-  vertical-align: bottom;
+  margin-right: 10px;
 }
 
 .widget {
   /* width: 271px; */
   width: 100%;
   padding: 1px 0 2px;
+}
+
+.widget--mt-27 {
+  margin-top: 27px !important;
 }
 
 .widget + .widget {
@@ -299,7 +305,7 @@ a.card-link:hover {
 }
 
 .radio__fake {
-  margin-right: 6px;
+  margin-right: 7px;
   position: relative;
   display: inline-block;
   width: 20px;
@@ -342,7 +348,7 @@ a.card-link:hover {
 .checkbox__fake {
   position: relative;
   display: inline-block;
-  margin-right: 6px;
+  margin-right: 7px;
   width: 20px;
   height: 20px;
   border-radius: 2px;
@@ -403,7 +409,7 @@ a.card-link:hover {
 .toggle__fake {
   position: relative;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 7px;
   width: 37px;
   height: 20px;
   border: 1px solid #777777;
@@ -439,11 +445,13 @@ a.card-link:hover {
 }
 
 .form-btn {
-  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 270px;
   height: 50px;
   background-color: transparent;
-  /* padding: 13px 0 13px; */
 
   border: 1px solid #d6d6d6;
   border-radius: 4px;
@@ -470,9 +478,7 @@ a.card-link:hover {
 .form-btn img {
   width: 24px;
   height: 24px;
-  display: inline-block;
-  margin-left: 5px;
-  vertical-align: middle;
+  margin-right: 6px;
 }
 
 .form-btn--submit {
